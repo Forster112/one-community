@@ -511,6 +511,48 @@ export default function OneCommunityFestivalPage() {
           className="py-16 sm:py-24 bg-[#F8F8F8] border-b-4 border-[#03134F]"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Quick All-in-One Registration Links Directory */}
+            <div className="mb-14 bg-[#C5E5FF] rounded-3xl p-6 sm:p-8 border-4 border-[#03134F] shadow-[8px_8px_0px_#03134F]">
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                <div>
+                  <span className="bg-[#03134F] text-[#EAB308] text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full">
+                    QUICK REGISTRATION DIRECTORY
+                  </span>
+                  <h3 className="text-2xl font-black text-[#03134F] mt-2">
+                    Direct Festival Registration Links
+                  </h3>
+                </div>
+                <p className="text-sm font-bold text-[#03134F]">
+                  Bookmark or share these official shortlinks with your ALX
+                  peers:
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
+                {FESTIVAL_EVENTS.map((ev) => (
+                  <a
+                    key={ev.id}
+                    href={ev.registrationUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#F8F8F8] hover:bg-[#03134F] text-[#03134F] hover:text-[#F8F8F8] p-4 rounded-2xl border-2 border-[#03134F] shadow-[4px_4px_0px_#0452F0] transition-colors flex flex-col justify-between group"
+                  >
+                    <div>
+                      <span className="text-[11px] font-black uppercase tracking-wider text-[#0452F0] group-hover:text-[#EAB308]">
+                        {ev.date} • {ev.format}
+                      </span>
+                      <p className="font-black text-sm mt-1 leading-snug">
+                        {ev.title}
+                      </p>
+                    </div>
+                    <span className="mt-3 pt-2 border-t border-[#C5E5FF] text-xs font-mono font-extrabold text-[#02B75E] flex items-center justify-between">
+                      <span>{ev.registrationUrl.replace("https://", "")}</span>
+                      <span aria-hidden="true">↗</span>
+                    </span>
+                  </a>
+                ))}
+              </div>
+            </div>
             {/* Section Header */}
             <div className="bg-[#03134F] text-[#F8F8F8] rounded-3xl p-6 sm:p-10 border-4 border-[#0452F0] shadow-[8px_8px_0px_#02B75E] mb-10">
               <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
@@ -726,49 +768,6 @@ export default function OneCommunityFestivalPage() {
                   </article>
                 );
               })}
-            </div>
-
-            {/* Quick All-in-One Registration Links Directory */}
-            <div className="mt-14 bg-[#C5E5FF] rounded-3xl p-6 sm:p-8 border-4 border-[#03134F] shadow-[8px_8px_0px_#03134F]">
-              <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-                <div>
-                  <span className="bg-[#03134F] text-[#EAB308] text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full">
-                    QUICK REGISTRATION DIRECTORY
-                  </span>
-                  <h3 className="text-2xl font-black text-[#03134F] mt-2">
-                    Direct Festival Registration Links
-                  </h3>
-                </div>
-                <p className="text-sm font-bold text-[#03134F]">
-                  Bookmark or share these official shortlinks with your ALX
-                  peers:
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
-                {FESTIVAL_EVENTS.map((ev) => (
-                  <a
-                    key={ev.id}
-                    href={ev.registrationUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-[#F8F8F8] hover:bg-[#03134F] text-[#03134F] hover:text-[#F8F8F8] p-4 rounded-2xl border-2 border-[#03134F] shadow-[4px_4px_0px_#0452F0] transition-colors flex flex-col justify-between group"
-                  >
-                    <div>
-                      <span className="text-[11px] font-black uppercase tracking-wider text-[#0452F0] group-hover:text-[#EAB308]">
-                        {ev.date} • {ev.format}
-                      </span>
-                      <p className="font-black text-sm mt-1 leading-snug">
-                        {ev.title}
-                      </p>
-                    </div>
-                    <span className="mt-3 pt-2 border-t border-[#C5E5FF] text-xs font-mono font-extrabold text-[#02B75E] flex items-center justify-between">
-                      <span>{ev.registrationUrl.replace("https://", "")}</span>
-                      <span aria-hidden="true">↗</span>
-                    </span>
-                  </a>
-                ))}
-              </div>
             </div>
           </div>
         </section>
