@@ -404,13 +404,13 @@ export default function OneCommunityFestivalPage() {
 
                   {/* Primary Community Frame */}
                   <div className="bg-[#F8F8F8] p-3 rounded-3xl border-4 border-[#C5E5FF] shadow-[10px_10px_0px_#0452F0]">
-                    <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border-2 border-[#03134F]">
+                    <div className="relative aspect-1/1 w-full overflow-hidden rounded-2xl border-2 border-[#03134F]">
                       <Image
                         src="/images/alumni.png"
                         alt="ALX Community members networking and smiling"
                         fill
                         sizes="(max-width: 1024px) 100vw, 42vw"
-                        className="object-cover"
+                        className="object-fit"
                         preload
                       />
                       <div className="absolute bottom-3 left-3 right-3 bg-[#03134F] text-[#F8F8F8] px-3.5 py-2 rounded-xl border border-[#0452F0] flex items-center justify-between">
@@ -498,7 +498,7 @@ export default function OneCommunityFestivalPage() {
                   ALX Community
                 </p>
                 <p className="text-xs text-[#C5E5FF] mt-0.5">
-                  Learners & Alumni
+                  Learners, Alumni & Friends
                 </p>
               </div>
             </div>
