@@ -104,6 +104,30 @@ const FESTIVAL_EVENTS: FestivalEvent[] = [
     accentColor: "green",
   },
   {
+    id: "learner-series",
+    title: "ALX Learner Series 5.0",
+    categoryKey: "career",
+    categoryBadge: "SKILL BUILDING • LEARNER SERIES 5.0",
+    dayOfWeek: "FRI",
+    date: "27 NOV",
+    time: "4:00 PM WAT",
+    format: "ONLINE",
+    location: "Live on Zoom",
+    speaker: "Uchenna Kingsley, Victory Odianosen & Hassan Ismail",
+    speakerRole: "Visual Storytelling • Data Career Roadmap • No-Code Automation",
+    flierHeadline:
+      "3 practical sessions with industry experts to help you build relevant skills, solve real problems, and grow your career.",
+    description:
+      "Level up across three power-packed sessions: The Art of Visual Storytelling Through Illustration & Motion Graphics (Uchenna Kingsley), Building Your Data Career Roadmap (Victory Odianosen, Solutions Engineer at Datamellon), and No-Code Automation Without Programming (Hassan Ismail).",
+    legacyPointsText: "Double Legacy Points Eligible • T&C’s Apply",
+    flierSrc: "/images/learner-series.jpeg",
+    flierAlt:
+      "ALX Learner Series 5.0 event flier featuring Uchenna Kingsley, Victory Odianosen, and Hassan Ismail",
+    registrationUrl: "https://alx.ng/series",
+    ctaLabel: "Register for Learner Series 5.0",
+    accentColor: "blue",
+  },
+  {
     id: "tea-talk",
     title: "Tea Talk: Tech and the Creative Industry",
     categoryKey: "entrepreneurship",
@@ -218,8 +242,8 @@ const COMMUNITY_MOMENTS = [
 
 const CATEGORY_FILTERS: { key: EventCategory; label: string; count: number }[] =
   [
-    { key: "all", label: "All Festival Events", count: 5 },
-    { key: "career", label: "Career & Pitching", count: 2 },
+    { key: "all", label: "All Festival Events", count: 6 },
+    { key: "career", label: "Career & Pitching", count: 3 },
     { key: "entrepreneurship", label: "Entrepreneurship", count: 1 },
     { key: "wellness", label: "Health & Wellness", count: 1 },
     { key: "celebration", label: "End-of-Year Party", count: 1 },
@@ -418,7 +442,7 @@ export default function OneCommunityFestivalPage() {
                           ALX COMMUNITY IN ACTION
                         </span>
                         <span className="bg-[#02B75E] text-[#03134F] text-[11px] font-black px-2 py-0.5 rounded">
-                          5 SIGNATURE EVENTS
+                          6 SIGNATURE EVENTS
                         </span>
                       </div>
                     </div>
@@ -473,7 +497,7 @@ export default function OneCommunityFestivalPage() {
                   CURATED LINEUP
                 </p>
                 <p className="text-xl sm:text-2xl font-black text-[#EAB308] mt-1">
-                  5 Major Events
+                  6 Major Events
                 </p>
                 <p className="text-xs text-[#C5E5FF] mt-0.5">
                   Virtual, Hybrid & In-Person
@@ -528,7 +552,7 @@ export default function OneCommunityFestivalPage() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
                 {FESTIVAL_EVENTS.map((ev) => (
                   <a
                     key={ev.id}
@@ -828,6 +852,19 @@ export default function OneCommunityFestivalPage() {
                 Event Registration Links
               </h3>
               <ul className="space-y-2.5 text-sm font-bold">
+                <li>
+                  <a
+                    href="https://alx.ng/series"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#F8F8F8] hover:text-[#02B75E] transition-colors flex items-center justify-between max-w-xs"
+                  >
+                    <span>ALX Learner Series 5.0</span>
+                    <span className="font-mono text-xs text-[#C5E5FF]">
+                      alx.ng/series ↗
+                    </span>
+                  </a>
+                </li>
                 <li>
                   <a
                     href="https://alx.ng/tea-talk"
