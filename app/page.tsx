@@ -35,6 +35,55 @@ interface FestivalEvent {
 
 const FESTIVAL_EVENTS: FestivalEvent[] = [
   {
+    id: "tea-talk",
+    title: "Tea Talk: Tech and the Creative Industry",
+    categoryKey: "entrepreneurship",
+    categoryBadge: "ENTREPRENEURSHIP • NIGERIA",
+    dayOfWeek: "SAT",
+    date: "28 NOV",
+    time: "12:00 PM WAT",
+    format: "HYBRID",
+    location: "ALX Hub & Zoom",
+    speaker: "Chuks Oteke",
+    speakerRole: "Founder, Film Anatomie",
+    flierHeadline:
+      "Chuks Oteke (Film Anatomie) on how tech is changing filmmaking and creative income.",
+    description:
+      "Grab a cup and dive into the intersection of technology, cinema, and the creator economy. Discover emerging tools, distribution models, and new ways African creatives are monetizing their craft.",
+    legacyPointsText:
+      "Earn 50 Legacy Points for attending (In person or on Zoom 30+ mins) • T&Cs Apply",
+    flierSrc: "/images/tea-talk.png",
+    flierAlt:
+      "Tea Talk: Tech and the Creative Industry with Chuks Oteke event flier",
+    registrationUrl: "https://alx.ng/tea-talk",
+    ctaLabel: "Register for Tea Talk",
+    accentColor: "gold",
+  },
+  {
+    id: "end-of-year",
+    title: "End-of-Year Christmas Party",
+    categoryKey: "celebration",
+    categoryBadge: "CULTURE & IMPACT • NIGERIA",
+    dayOfWeek: "SAT",
+    date: "12 DEC",
+    time: "12:00 PM WAT",
+    format: "IN PERSON",
+    location: "Different Locations",
+    speaker: "ALX Nigeria Community Chapters",
+    speakerRole: "Regional Meetups & Festive Celebration",
+    flierHeadline:
+      "Have fun, network, look back on the year and plan the next with the community.",
+    description:
+      "Close out the year in unforgettable style! Connect face-to-face with learners, alumni and friends across different regional locations for music, games, reflections on 2026 milestones, and bold plans for the new year.",
+    legacyPointsText:
+      "Earn 50 Legacy Points for attending in person • T&Cs Apply",
+    flierSrc: "/images/end-of-year.png",
+    flierAlt: "End-of-Year Christmas Party event flier",
+    registrationUrl: "https://alx.ng/end-of-year",
+    ctaLabel: "Register for End of Year Party",
+    accentColor: "green",
+  },
+  {
     id: "pitch-deck",
     title: "How to Create a Winning Pitch Deck",
     categoryKey: "career",
@@ -127,55 +176,6 @@ const FESTIVAL_EVENTS: FestivalEvent[] = [
     registrationUrl: "https://alx.ng/series",
     ctaLabel: "Register for Learner Series 5.0",
     accentColor: "blue",
-  },
-  {
-    id: "tea-talk",
-    title: "Tea Talk: Tech and the Creative Industry",
-    categoryKey: "entrepreneurship",
-    categoryBadge: "ENTREPRENEURSHIP • NIGERIA",
-    dayOfWeek: "SAT",
-    date: "28 NOV",
-    time: "12:00 PM WAT",
-    format: "HYBRID",
-    location: "ALX Hub & Zoom",
-    speaker: "Chuks Oteke",
-    speakerRole: "Founder, Film Anatomie",
-    flierHeadline:
-      "Chuks Oteke (Film Anatomie) on how tech is changing filmmaking and creative income.",
-    description:
-      "Grab a cup and dive into the intersection of technology, cinema, and the creator economy. Discover emerging tools, distribution models, and new ways African creatives are monetizing their craft.",
-    legacyPointsText:
-      "Earn 50 Legacy Points for attending (In person or on Zoom 30+ mins) • T&Cs Apply",
-    flierSrc: "/images/tea-talk.png",
-    flierAlt:
-      "Tea Talk: Tech and the Creative Industry with Chuks Oteke event flier",
-    registrationUrl: "https://alx.ng/tea-talk",
-    ctaLabel: "Register for Tea Talk",
-    accentColor: "gold",
-  },
-  {
-    id: "end-of-year",
-    title: "End-of-Year Christmas Party",
-    categoryKey: "celebration",
-    categoryBadge: "CULTURE & IMPACT • NIGERIA",
-    dayOfWeek: "SAT",
-    date: "12 DEC",
-    time: "12:00 PM WAT",
-    format: "IN PERSON",
-    location: "Different Locations",
-    speaker: "ALX Nigeria Community Chapters",
-    speakerRole: "Regional Meetups & Festive Celebration",
-    flierHeadline:
-      "Have fun, network, look back on the year and plan the next with the community.",
-    description:
-      "Close out the year in unforgettable style! Connect face-to-face with learners, alumni and friends across different regional locations for music, games, reflections on 2026 milestones, and bold plans for the new year.",
-    legacyPointsText:
-      "Earn 50 Legacy Points for attending in person • T&Cs Apply",
-    flierSrc: "/images/end-of-year.png",
-    flierAlt: "End-of-Year Christmas Party event flier",
-    registrationUrl: "https://alx.ng/end-of-year",
-    ctaLabel: "Register for End of Year Party",
-    accentColor: "green",
   },
 ];
 
