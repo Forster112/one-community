@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import FestivalDpGenerator from "./components/FestivalDpGenerator";
 
 type EventCategory =
   | "all"
@@ -291,6 +292,12 @@ export default function OneCommunityFestivalPage() {
 
           <div className="flex items-center gap-3">
             <a
+              href="#create-dp"
+              className="hidden sm:inline-flex items-center gap-1.5 bg-[#EAB308] text-[#03134F] font-bold text-xs sm:text-sm px-4 py-2.5 rounded-full border-2 border-[#F8F8F8] shadow-[3px_3px_0px_#0452F0] hover:bg-[#C5E5FF] transition-colors"
+            >
+              <span>🎉 Create Party DP</span>
+            </a>
+            <a
               href="#events"
               className="inline-flex items-center gap-2 bg-[#02B75E] text-[#03134F] font-bold text-xs sm:text-sm px-4 sm:px-5 py-2.5 rounded-full border-2 border-[#F8F8F8] shadow-[3px_3px_0px_#0452F0] hover:bg-[#EAB308] transition-colors"
             >
@@ -408,6 +415,12 @@ export default function OneCommunityFestivalPage() {
                     className="w-full sm:w-auto text-center bg-[#02B75E] text-[#03134F] font-black text-base px-7 py-4 rounded-full border-2 border-[#F8F8F8] shadow-[5px_5px_0px_#0452F0] hover:bg-[#EAB308] transition-colors"
                   >
                     View Events & Register Now ↓
+                  </a>
+                  <a
+                    href="#create-dp"
+                    className="w-full sm:w-auto text-center bg-[#EAB308] text-[#03134F] font-black text-base px-7 py-4 rounded-full border-2 border-[#F8F8F8] shadow-[5px_5px_0px_#0452F0] hover:bg-[#C5E5FF] transition-colors"
+                  >
+                    🎉 Create End-of-Year DP Card
                   </a>
                 </div>
               </div>
@@ -795,6 +808,9 @@ export default function OneCommunityFestivalPage() {
             </div>
           </div>
         </section>
+
+        {/* 4. END-OF-YEAR PARTY GETDP & WRAPPED CARD GENERATOR (#create-dp) */}
+        <FestivalDpGenerator />
       </main>
 
       {/* 7. FESTIVAL FOOTER */}
